@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>A read on where AI fits in MDC's stack. And where it does not. | Prepared for Miami Dade College</title>
+<meta name="description" content="Saw the AI Innovation Hub opened at Kendall in March and that NAAIC now has Google, Intel, Microsoft, and NSF money lined up. A hypothesis about where the curriculum-consistency piece breaks when the consortium adds its next five colleges." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Utility bar (mimics mdc.edu's template14 top strip) -->
+<div class="utility-bar" role="complementary" aria-label="Utility">
+  <div class="container utility-inner">
+    <span class="utility-item">Prepared for the Office of the President and the AI Center</span>
+    <span class="utility-dot" aria-hidden="true">&bull;</span>
+    <span class="utility-item">April 2026</span>
+  </div>
+</div>
+
+<!-- Primary header -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brandmark" href="#" aria-label="Miami Dade College">
+      <img src="logo.png" alt="Miami Dade College" />
+    </a>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><span>Partnerships</span></li>
+        <li aria-current="page"><span>A note from Eduba</span></li>
+      </ol>
+    </nav>
+  </div>
+  <div class="header-rule" aria-hidden="true"></div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-meta">
+      <span class="eyebrow">A working note</span>
+      <span class="meta-sep" aria-hidden="true"></span>
+      <span class="meta-item">Kendall Campus. Wolfson. North.</span>
+    </div>
+    <h1 class="h1">A read on where AI fits in MDC's stack. And where it does not.</h1>
+    <p class="deck">A short memo from Eduba, written the week after the Kendall AI Innovation Hub ribbon cut, with one hypothesis about where the NAAIC curriculum will drift first and what to do about it.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">Book 30 minutes with Matt Creamer</a>
+      <a class="btn btn-ghost" href="#pitch">Read the memo</a>
+    </div>
+    <dl class="stat-row" aria-label="At a glance">
+      <div class="stat">
+        <dt>Kendall AI Innovation Hub</dt>
+        <dd>7,000+ sq ft</dd>
+      </div>
+      <div class="stat">
+        <dt>Faculty trained on AI</dt>
+        <dd>1,000+</dd>
+      </div>
+      <div class="stat">
+        <dt>NAAIC lead institutions</dt>
+        <dd>3</dd>
+      </div>
+      <div class="stat">
+        <dt>Microsoft Copilot pass-rate lift</dt>
+        <dd>15 points</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- Pitch body -->
+<main id="pitch" class="pitch">
+  <div class="container pitch-grid">
+
+    <aside class="toc" aria-label="Sections">
+      <p class="toc-label">Contents</p>
+      <ol>
+        <li><a href="#opening">Where things stand</a></li>
+        <li><a href="#frame">The 60/30/10 frame</a></li>
+        <li><a href="#case">Where this comes from</a></li>
+        <li><a href="#paper">The paper underneath</a></li>
+        <li><a href="#cta">Next step</a></li>
+      </ol>
+    </aside>
+
+    <article class="body-copy">
+
+      <section id="opening" class="section">
+        <p class="section-index">01</p>
+        <h2 class="h2">Where things stand</h2>
+        <p>Miami Dade College cut the ribbon on the Kendall AI Innovation Hub in March. 7,000 square feet. Three AI facilities across campus. NAAIC carrying NSF, Google.org, Intel, and Microsoft money. A bachelor's in Applied AI that was the first in Florida. Microsoft reporting a 15-point lift on pass rates from the Copilot rollout.</p>
+        <p>The college has moved faster on AI than almost any two-year institution in the country. The next step is the harder one. Making the methodology consistent enough to travel to every NAAIC partner college, and durable enough to survive the next accreditation review.</p>
+      </section>
+
+      <section id="frame" class="section">
+        <p class="section-index">02</p>
+        <h2 class="h2">The 60/30/10 frame</h2>
+        <p>A useful way to look at any college's AI stack. About 60 percent of what looks like an AI problem is actually traditional software or database work that never needed an LLM. Another 30 percent is rule-based logic with a clean deterministic answer. The remaining 10 percent is genuinely probabilistic and belongs on a model.</p>
+        <p>Most institutions spend budget putting AI on the first 60 percent and then wonder why the results are uneven. Applied to MDC specifically, the advising workflow, the Banner-to-Canvas-to-Copilot data path, and the NAAIC curriculum review process each have a clear answer to that 60/30/10 question once you slow down and look. That is the work. Deciding which layer each piece belongs on, and then designing the orchestration so every layer is inspectable.</p>
+
+        <div class="layer-card" role="group" aria-labelledby="layer-heading">
+          <p id="layer-heading" class="layer-heading">How it maps on a campus</p>
+          <div class="layers">
+            <div class="layer">
+              <div class="layer-bar" style="--w: 60%"></div>
+              <div class="layer-meta">
+                <span class="layer-pct">60%</span>
+                <span class="layer-label">Traditional code. Banner joins, Canvas reports, enrollment pipelines.</span>
+              </div>
+            </div>
+            <div class="layer">
+              <div class="layer-bar teal" style="--w: 30%"></div>
+              <div class="layer-meta">
+                <span class="layer-pct">30%</span>
+                <span class="layer-label">Rule-based logic. Financial aid packaging, prerequisite checks, degree audit.</span>
+              </div>
+            </div>
+            <div class="layer">
+              <div class="layer-bar dark" style="--w: 10%"></div>
+              <div class="layer-meta">
+                <span class="layer-pct">10%</span>
+                <span class="layer-label">Genuine AI. Advising conversation, curriculum adaptation, faculty workflow design.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="case" class="section">
+        <p class="section-index">03</p>
+        <h2 class="h2">Where this comes from</h2>
+        <p>The closest prior engagement is Edinburgh and UKICER. An academic collaboration with a public research university. Same posture as MDC. Public institution, federally visible, a body of work that needs to be publishable and defensible. The output was a methodology documented at a level of rigor that peers can adopt and critique. That register is the one MDC will recognize.</p>
+
+        <div class="proof-grid">
+          <div class="proof-card">
+            <p class="proof-label">Academic collaboration</p>
+            <p class="proof-title">Edinburgh / UKICER</p>
+            <p class="proof-body">Methodology transfer with a public research university. Peer-reviewable outputs, not slides.</p>
+          </div>
+          <div class="proof-card">
+            <p class="proof-label">Enterprise training at scale</p>
+            <p class="proof-title">Pacific Life and Colgate-Palmolive</p>
+            <p class="proof-body">1,500+ people trained since May 2025. 95 percent still using the tools 30 days after the workshop.</p>
+          </div>
+          <div class="proof-card">
+            <p class="proof-label">Professional services</p>
+            <p class="proof-title">KPMG UK, one of the Big Four</p>
+            <p class="proof-body">40+ executives trained inside a regulated, audit-grade environment.</p>
+          </div>
+          <div class="proof-card">
+            <p class="proof-label">Small-cohort faculty</p>
+            <p class="proof-title">Flagler College</p>
+            <p class="proof-body">If the first conversation scopes down to a single campus or department, this is the matching shape.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="paper" class="section">
+        <p class="section-index">04</p>
+        <h2 class="h2">The paper underneath</h2>
+        <p>Interpretable Context Methodology is the framework. Submitted to ACM TiiS. It treats agent context as a layered filesystem, which is the structure NAAIC will need if the curriculum is to travel across partner colleges without drifting.</p>
+        <p>Repository (MIT license): <a href="https://github.com/RinDig/Interpretable-Context-Methodology-ICM-" target="_blank" rel="noopener">github.com/RinDig/Interpretable-Context-Methodology-ICM-</a></p>
+        <p>A secondary asset for the governance conversation is the Ethics Engine, a psychometric assessment tool for evaluating ideological and moral patterns in LLMs, documented at <a href="https://arxiv.org/abs/2510.11742" target="_blank" rel="noopener">arxiv.org/abs/2510.11742</a> with code at <a href="https://github.com/RinDig/AuditEngine" target="_blank" rel="noopener">github.com/RinDig/AuditEngine</a>.</p>
+        <p>Eduba partners with NLP Logix for work that sits below the orchestration layer. NLP Logix has been in machine learning since 2011 and runs over 150 data scientists.</p>
+      </section>
+
+      <section id="cta" class="section cta-section">
+        <p class="section-index">05</p>
+        <h2 class="h2">The next step</h2>
+        <div class="cta-card">
+          <div class="cta-copy">
+            <p class="cta-kicker">30 minutes with Matt Creamer, CRO at Eduba.</p>
+            <p class="cta-body">Bring one NAAIC curriculum decision that is taking longer than it should. We will walk through it live and leave you with a short memo on where the friction sits.</p>
+          </div>
+          <a class="btn btn-primary btn-lg" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">Book the call</a>
+          <p class="cta-link"><a href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">calendly.com/thecro-eduba/30min</a></p>
+        </div>
+      </section>
+
+    </article>
+  </div>
+</main>
+
+<!-- Who wrote this -->
+<section class="author">
+  <div class="container author-inner">
+    <div class="author-col">
+      <p class="kicker">Who wrote this</p>
+      <h3 class="h3">Jake Van Clief, CEO of Eduba</h3>
+      <p>Marine Corps veteran (8 years, cryptographic systems, F-35 and F-18 avionics). MSc Future Governance, University of Edinburgh. Published in ACM TiiS (ICM) and arXiv (Ethics Engine). Over 1,500 people trained across enterprise engagements since May 2025. Jake also built an online community to 22,000 members in 5 weeks.</p>
+    </div>
+    <div class="author-col author-col-right">
+      <p class="kicker">Who you would talk to</p>
+      <h3 class="h3">Matt Creamer, CRO</h3>
+      <p>Matt runs community and enterprise outreach at Eduba. The 30 minutes on the calendar go directly to him.</p>
+      <p class="contact-line"><a href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">calendly.com/thecro-eduba/30min</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <img src="logo.png" alt="Miami Dade College" class="footer-logo" />
+      <p class="footer-note">This page was prepared as a working note for a conversation. It is not an official MDC publication.</p>
+    </div>
+    <div class="footer-col footer-col-right">
+      <p class="footer-label">Prepared by</p>
+      <p class="footer-eduba">Eduba. <a href="https://eduba.io" target="_blank" rel="noopener">eduba.io</a></p>
+      <p class="footer-small">Veteran-owned. Based in St. Augustine, Florida.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
